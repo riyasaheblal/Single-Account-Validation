@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- This is often your domain name (reversed.)  -->
+	<groupId>cedge.pfms</groupId>
+	<!-- The name of this project (actually, the name of the artifact, which is
+	the thing that this project produces. A jar in this case.) -->
+	<artifactId>Single-Account-Validation</artifactId>
+	<!-- The version of this project. SNAPSHOT means "we're still working on it" -->
+	<version>1.0-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.jasypt</groupId>
+			<artifactId>jasypt</artifactId>
+			<version>1.9.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.diogonunes</groupId>
+			<artifactId>JColor</artifactId>
+			<version>5.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>19.9.0.0</version>
+		</dependency>
+	</dependencies>
+
+	<!-- This blob of configuration tells Maven to make the jar executable. You
+	can run it with:
+    mvn clean package
+    java -jar target/javaparser-maven-sample-1.0-SNAPSHOT-shaded.jar
+    -->
+	<build>
+
+
+	</build>
+</project>
